@@ -1,0 +1,26 @@
+# Answer the following questions for the MNIST assignment
+
+1. What was the difference in the final evaluation for each algorithm on this problem?
+
+The Logistic regression tends to have a higher model score than the Naive Bayes. There are also some tiny differences worthy of saying, which is the TN and FP are relatively low for logistic regression, but we can discover it is not the case for the Naive Bayes model. It is shown in a slightly light color that 9 tended to be misclassified as 4 with a higher possibility, and 3 had a slightly higher chance of misclassified as 5.
+
+2. If you observed a difference in evaluation, why do you believe one algorithm performed better than the other?
+
+Not only the model score can help with the determination, but also the confusion matrix helps calculate accuracy and precision or even layout in crystal clear color to distinguish the correctness of the prediction.
+
+3. Based on the confusion matrix, which numerals contributed most to the error, and why?
+
+9 tends to be misclassified as 4 the most, but interestingly not the other way around. In my opinion, the shape of the two numbers is pretty similar; the shape of 4 varies from person to person, and sometimes, somehow, a circle is created instead of a triangle in the shape of 4. Moreover, when the first stroke is not long enough to form an intersection with the second stroke, it is more likely to be misclassified as a 9. Oppositely, 9 is written in one stroke, which limits the possibility of forming any crossing line that might look like a 4.   
+
+
+If you used AI assistants such as Copilot & ChapGPT:
+
+- Which AI tools did you use, and for what part of the solution?
+
+I used ChatGPT to do two things in this assignment:
+1. Understanding the struck package and importing the datasets.
+2. Check which parameter could be put into grid search for better model performance and the explanation of all the parameters in both Naive Bayes and Logistic Regression models.
+
+- Optional: share any reflection on using such tools. For instance, did they contribute to your learning? Were they more helpful than harmful? Did you notice any mistakes in their outputs?
+
+It saves me quite a bit of time for me to google online and searches for valid resources. Overall, I think it is fairly helpful to my learning since we can form a dialogue, and it explains things in a comprehensive way. I couldn't tell which information it gave me was wrong for this topic, but that is probably because I'm not too familiar with the content yet. I guess we all have to verify the answer before we implement it because the correctness may vary from data to data.
